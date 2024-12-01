@@ -51,7 +51,9 @@ def home():
     
     with col3l:
         if st.button("🐾Helper"):
-            webbrowser.open("https://jaihodigital.onrender.com/resources_guide/visio_ai_product_guide/helper.html")
+            #webbrowser.open("https://jaihodigital.onrender.com/resources_guide/visio_ai_product_guide/helper.html")
+            helper_url = "https://jaihodigital.onrender.com/resources_guide/visio_ai_product_guide/helper.html"
+            st.markdown(f"[Open Helper Guide]({helper_url})", unsafe_allow_html=True)
 
     if 'updated_df' not in st.session_state:
         st.session_state.updated_df = None  # Initialize updated_df in session state
