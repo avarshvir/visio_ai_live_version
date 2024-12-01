@@ -483,6 +483,11 @@ def home():
                 st.pyplot(plt)
 
               
+st.markdown("""
+    <div style="position: fixed; bottom: 0; left: 0; width: 100%; text-align: center; background-color: ; padding: 10px;">
+        <p style="font-size: 12px;">Made with ❤️ by <a href = "https://avarshvir.github.io/arshvir">Arshvir</a> and <a href = "https://jaihodigital.onrender.com">Jaiho Digital</a></p>
+    </div>
+""", unsafe_allow_html=True)
 
 # Run the home function
 if __name__ == "__main__":
