@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visio AI Documentation</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #6a5acd, #1a73e8);
+            color: white;
+            padding: 50px;
+            text-align: center;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3em;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #1a73e8;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            padding: 30px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        section:hover {
+            transform: translateY(-10px);
+        }
+
+        h2 {
+            color: #6a5acd;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            color: #333;
+            font-size: 1.8em;
+            margin-top: 20px;
+        }
+
+        p, ul {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            padding: 5px 0;
+        }
+
+        /* Code Blocks */
+        pre {
+            background: #2e3b4e;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 1em;
+            overflow-x: auto;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background-color: #1a73e8;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #6a5acd;
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #6a5acd;
+            text-decoration: none;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2em;
+            }
+
+            nav a {
+                padding: 10px;
+                font-size: 1em;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Visio AI Documentation</h1>
+        <p>Advanced Data Analysis & Machine Learning Platform</p>
+    </header>
+
+    <nav>
+        <a href="#overview">Overview</a>
+        <a href="#getting-started">Getting Started</a>
+        <a href="#features">Key Features</a>
+        <a href="#roadmap">Future Roadmap</a>
+        <a href="#support">Support</a>
+    </nav>
+
+    <div class="container">
+        <!-- Overview Section -->
+        <section id="overview">
+            <h2>Overview</h2>
+            <p>Visio AI is an advanced data analysis and machine learning platform developed by Jaiho Digital, designed to simplify complex data science tasks for researchers, analysts, and machine learning enthusiasts.</p>
+        </section>
+
+        <!-- Getting Started Section -->
+        <section id="getting-started">
+            <h2>Getting Started</h2>
+            <h3>System Requirements</h3>
+            <ul>
+                <li>Operating System: Windows, macOS, Linux</li>
+                <li>Python 3.8+</li>
+                <li>Streamlit</li>
+                <li>Required Python Libraries:
+                    <ul>
+                        <li>pandas</li>
+                        <li>numpy</li>
+                        <li>scikit-learn</li>
+                        <li>seaborn</li>
+                        <li>matplotlib</li>
+                        <li>plotly</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Installation</h3>
+            <ol>
+                <li>Clone the Visio AI repository:
+                    <pre><code>git clone https://github.com/jaihodigital/visio-ai.git
+cd visio-ai</code></pre>
+                </li>
+                <li>Create a virtual environment:
+                    <pre><code>python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`</code></pre>
+                </li>
+                <li>Install dependencies:
+                    <pre><code>pip install -r requirements.txt</code></pre>
+                </li>
+                <li>Run the Streamlit app:
+                    <pre><code>streamlit run app.py</code></pre>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Key Features Section -->
+        <section id="features">
+            <h2>Key Features</h2>
+            <h3>1. Data Upload and Missing Value Handling</h3>
+            <ul>
+                <li>Upload datasets in CSV, Excel, etc.</li>
+                <li>Automatic and Manual Missing Value Handling</li>
+            </ul>
+
+            <h3>2. Visualization Tools</h3>
+            <ul>
+                <li>Generate Pairplots</li>
+                <li>Create various plot types (Scatter, Bar, Histogram, etc.)</li>
+            </ul>
+
+            <h3>3. Data Operations</h3>
+            <ul>
+                <li>Split datasets into training/testing</li>
+                <li>Stratified sampling and customizable ratios</li>
+            </ul>
+
+            <h3>4. Machine Learning Algorithms</h3>
+            <ul>
+                <li>Automated algorithm recommendations</li>
+                <li>Support for Classification, Regression, and Clustering</li>
+            </ul>
+
+            <h3>5. Additional Tools</h3>
+            <ul>
+                <li>Word Cloud Generator</li>
+                <li>Note-Lite: Built-in note-taking</li>
+                <li>Calculator App</li>
+                <li>Viz AI: Image dataset analysis</li>
+                <li>Viz Report: Comprehensive report generation</li>
+            </ul>
+        </section>
+
+        <!-- Future Roadmap Section -->
+        <section id="roadmap">
+            <h2>Future Roadmap</h2>
+            <ul>
+                <li>Advanced AI Chatbot Integration</li>
+                <li>More machine learning algorithms</li>
+                <li>Enhanced visualization capabilities</li>
+                <li>Cloud deployment options</li>
+            </ul>
+        </section>
+
+        <!-- Support Section -->
+        <section id="support">
+            <h2>Support</h2>
+            <p>If you need help, please reach out to us:</p>
+            <ul>
+                <li>Email: <a href="mailto:support@jaihodigital.com">support@jaihodigital.com</a></li>
+                <li>Website: <a href="https://www.jaihodigital.com/visio-ai-support" target="_blank">www.jaihodigital.com/visio-ai-support</a></li>
+            </ul>
+        </section>
+
+        <div class="text-center">
+            <a href="#overview" class="btn">Start Exploring</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Jaiho Digital. All Rights Reserved.</p>
+        <p>Designed by Jaiho Digital Team | <a href="https://www.jaihodigital.com" target="_blank">Visit our website</a></p>
+    </footer>
+
+</body>
+</html>
