@@ -19,8 +19,13 @@ from notebook_app import note_edit
 from generate_report import generate_report
 import webbrowser
 
+st.set_page_config(
+    page_title="Dynamic Data Operations Dashboard",
+    page_icon="images/favicon.png",  # Any emoji
+    layout="wide"
+)
 # Set Streamlit page configuration
-st.set_page_config(page_title="Dynamic Data Operations Dashboard", layout="wide")
+#st.set_page_config(page_title="Dynamic Data Operations Dashboard", layout="wide")
 
 
 
